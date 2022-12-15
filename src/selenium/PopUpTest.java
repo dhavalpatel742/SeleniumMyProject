@@ -20,11 +20,11 @@ public class PopUpTest {
 		
 		Thread.sleep(3000);
 		
-		List<WebElement> popup = driver.findElements(By.className("btn-close"));
+		List<WebElement> popup = driver.findElements(By.className("_24EHh"));
 		System.out.println(popup.size());
 		
 		if(popup.size()>0) {
-			driver.findElement(By.className("btn-close")).click();
+			driver.findElement(By.className("_24EHh")).click();
 			//System.out.println("Element present");
 		}
 		/*else {

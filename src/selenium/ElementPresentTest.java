@@ -17,12 +17,12 @@ public class ElementPresentTest {
 		
 		driver.get("https://www.google.com/");
 		
-		/*if(driver.findElement(By.linkText("About")).isDisplayed()) {
+		/*if(driver.findElement(By.linkText("Aboutddd")).isDisplayed()) {
 			System.out.println("Element present");
 		}
 		else {
 			System.out.println("Element not present");
-		}*/
+		}*/ 
 		
 		List<WebElement> element = driver.findElements(By.linkText("Aboutxkjbhk"));
 		System.out.println(element.size());

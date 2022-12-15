@@ -16,7 +16,7 @@ public class YahooHeaderTest {
 		driver.get("https://ca.yahoo.com/?p=us");
 		
 		//Can use ----> "//div[@id='pageFooterChildren']//li" <------for any indirect li elements inside div.
-		List<WebElement> alllinks = driver.findElements(By.xpath("//ul[@class='_yb_17gvx _yb_1rj5g']/li"));
+		List<WebElement> alllinks = driver.findElements(By.xpath("//ul[@class='_yb_1ojt6 _yb_y77zm']/li"));
 		System.out.println(alllinks.size());
 		
 		for (int i=0;i<alllinks.size();i++) {

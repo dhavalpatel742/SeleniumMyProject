@@ -20,20 +20,22 @@ public class AliExpressHoverTest {
 		
 		Thread.sleep(3000);
 		
-		List<WebElement> popup = driver.findElements(By.className("btn-close"));
+		List<WebElement> popup = driver.findElements(By.className("_24EHh"));
 		System.out.println(popup.size());
 		
 		if(popup.size()>0) {
-			driver.findElement(By.className("btn-close")).click();
+			driver.findElement(By.className("_24EHh")).click();
 			//System.out.println("Element present");
 		}
+		
+		Thread.sleep(3000);
 		WebElement account = driver.findElement(By.linkText("Women's Fashion"));
 		Actions builder = new Actions(driver);
 		
 		builder.moveToElement(account).build().perform();
 		
-
-		List<WebElement> alllinks = driver.findElements(By.xpath("(//div[@class='sub-cate-row'])/dl[1]//a"));
+		Thread.sleep(2000);
+		List<WebElement> alllinks = driver.findElements(By.xpath("(//div[@class='sub-cate-content']/div[1])/dl[1]/dd[1]/a"));
 		System.out.println(alllinks.size());
 		
 		for (int i=0;i<alllinks.size();i++) {

@@ -20,7 +20,7 @@ public class GoogleSuggestionListTest {
 		Thread.sleep(3000);
 		//get size 10
 		//print text for all this options
-		List<WebElement> alllinks = driver.findElements(By.xpath("//ul[@class='erkvQe']//div[@class='OBMEnb']//ul[@class='G43f7e']/li"));
+		List<WebElement> alllinks = driver.findElements(By.xpath("//div[@class='erkvQe']//div[@class='OBMEnb']//ul[@class='G43f7e']/li"));
 		System.out.println(alllinks.size());
 		
 		/*for (int i=0;i<alllinks.size();i++) {

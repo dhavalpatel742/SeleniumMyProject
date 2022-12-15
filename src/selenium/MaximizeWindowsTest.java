@@ -11,7 +11,7 @@ public class MaximizeWindowsTest {
 		FirefoxDriver driver = new FirefoxDriver();
 		driver.get("https://www.google.com/");
 		
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();;
 
 	}
 

@@ -20,7 +20,7 @@ public class YahooSuggestionListTest {
 		Thread.sleep(3000);
 		//get size 10
 		//print text for all this options
-		List<WebElement> alllinks = driver.findElements(By.xpath("//ul[@class='_yb_1lvc1']/li"));
+		List<WebElement> alllinks = driver.findElements(By.xpath("//ul[@class='_yb_s87cv']/li"));
 		System.out.println(alllinks.size());
 		
 		/*for (int i=0;i<alllinks.size();i++) {
